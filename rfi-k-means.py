@@ -6,7 +6,6 @@ import h5py
 from scipy import signal, sparse
 from scipy.sparse.linalg import spsolve
 from sklearn.cluster import MiniBatchKMeans
-from seek.mitigation.sum_threshold import get_rfi_mask
 
 
 def ArPLS(y, lam=1e4, ratio=0.05, itermax=10):
@@ -117,7 +116,6 @@ def flagRFI(visibility):
 
 
 srcDir = '/home/stcm/Documents/HIRAX/hide/hide/data/1year/2016/03/21/'
-#srcDir = '/data/path/to/hide/simulation/samples/data/1year/2016/03/21/'
 
 for count, filename in enumerate(sorted(os.listdir(srcDir)), start=1):
 	if filename.endswith(".h5"):
