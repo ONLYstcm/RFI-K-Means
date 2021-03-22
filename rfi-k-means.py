@@ -115,7 +115,7 @@ def flagRFI(visibility):
 	return flaggedVisibility
 
 
-srcDir = '/home/stcm/Documents/HIRAX/hide/hide/data/1year/2016/03/21/'
+srcDir = '/set/data/path/to/hide/hide/data/1year/2016/03/21/'
 
 for count, filename in enumerate(sorted(os.listdir(srcDir)), start=1):
 	if filename.endswith(".h5"):
